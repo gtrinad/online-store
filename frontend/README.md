@@ -10,9 +10,9 @@
 ![image](./gitlab-swagger.png)
 
 ## Подключение пакета
-1. Собрать пакет: в директории diploma-frontend выполнить команду python setup.py sdist
+1. Собрать пакет: в директории frontend выполнить команду python setup.py sdist
 2. Установить полученный пакет в виртуальное окружение: `pip install dist/frontend-X.Y.tar.gz`. X и Y - числа, они могут изменяться в зависимости от текущей версии пакета.
-3. В `settings.py` дипломного проекта подключить приложение:
+3. В `settings.py` проекта подключить приложение:
 ```python
 INSTALLED_APPS = [
         ...
