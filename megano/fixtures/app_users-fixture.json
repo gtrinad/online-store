@@ -1,0 +1,21 @@
+[
+{
+  "model": "app_users.useravatar",
+  "pk": 1,
+  "fields": {
+    "src": "avatars/avatar_1/avatar_01.jpg",
+    "alt": "John's Avatar"
+  }
+},
+{
+  "model": "app_users.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "fullName": "Jim",
+    "phone": 77071112233,
+    "balance": "900000.00",
+    "avatar": 1
+  }
+}
+]

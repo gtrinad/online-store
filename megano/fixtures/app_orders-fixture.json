@@ -1,0 +1,373 @@
+[
+{
+  "model": "app_orders.order",
+  "pk": 1,
+  "fields": {
+    "createdAt": "2023-12-12T09:55:52.296Z",
+    "user": 1,
+    "deliveryType": "express",
+    "paymentType": "someone",
+    "totalCost": "90500.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 2,
+  "fields": {
+    "createdAt": "2023-12-12T10:11:24.403Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "42000.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 3,
+  "fields": {
+    "createdAt": "2023-12-12T10:14:08.889Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "30000.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 4,
+  "fields": {
+    "createdAt": "2023-12-12T10:42:43.407Z",
+    "user": 1,
+    "deliveryType": "express",
+    "paymentType": "online",
+    "totalCost": "25500.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      5
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 5,
+  "fields": {
+    "createdAt": "2023-12-12T11:45:30.093Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "700.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      9
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 6,
+  "fields": {
+    "createdAt": "2023-12-12T11:49:54.040Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "someone",
+    "totalCost": "27500.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      8
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 7,
+  "fields": {
+    "createdAt": "2023-12-12T12:18:05.916Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "1200.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      9
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 8,
+  "fields": {
+    "createdAt": "2023-12-12T12:41:13.553Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "5000.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      3
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 9,
+  "fields": {
+    "createdAt": "2023-12-12T12:44:17.719Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "32500.00",
+    "status": "Paid",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      3,
+      8
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 10,
+  "fields": {
+    "createdAt": "2023-12-12T13:00:47.411Z",
+    "user": 1,
+    "deliveryType": "ordinary",
+    "paymentType": "online",
+    "totalCost": "17000.00",
+    "status": "Awaiting payment",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      4
+    ]
+  }
+},
+{
+  "model": "app_orders.order",
+  "pk": 11,
+  "fields": {
+    "createdAt": "2023-12-12T13:38:39.994Z",
+    "user": 1,
+    "deliveryType": "express",
+    "paymentType": "online",
+    "totalCost": "6500.00",
+    "status": "Awaiting payment",
+    "city": "Almaty",
+    "address": "Gagarin Avenue, 48",
+    "products": [
+      1
+    ]
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 1,
+  "fields": {
+    "order": 3,
+    "product": 3,
+    "count": 0
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 2,
+  "fields": {
+    "order": 3,
+    "product": 5,
+    "count": 0
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 3,
+  "fields": {
+    "order": 1,
+    "product": 5,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 4,
+  "fields": {
+    "order": 1,
+    "product": 6,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 5,
+  "fields": {
+    "order": 2,
+    "product": 4,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 6,
+  "fields": {
+    "order": 2,
+    "product": 5,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 7,
+  "fields": {
+    "order": 4,
+    "product": 5,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 8,
+  "fields": {
+    "order": 5,
+    "product": 9,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 9,
+  "fields": {
+    "order": 3,
+    "product": 2,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 10,
+  "fields": {
+    "order": 3,
+    "product": 8,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 11,
+  "fields": {
+    "order": 7,
+    "product": 9,
+    "count": 2
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 12,
+  "fields": {
+    "order": 4,
+    "product": 5,
+    "count": 0
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 13,
+  "fields": {
+    "order": 5,
+    "product": 9,
+    "count": 0
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 14,
+  "fields": {
+    "order": 9,
+    "product": 3,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 15,
+  "fields": {
+    "order": 9,
+    "product": 8,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 16,
+  "fields": {
+    "order": 6,
+    "product": 8,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 17,
+  "fields": {
+    "order": 6,
+    "product": 8,
+    "count": 0
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 18,
+  "fields": {
+    "order": 10,
+    "product": 4,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 19,
+  "fields": {
+    "order": 8,
+    "product": 3,
+    "count": 1
+  }
+},
+{
+  "model": "app_orders.productsinorder",
+  "pk": 20,
+  "fields": {
+    "order": 11,
+    "product": 1,
+    "count": 2
+  }
+}
+]

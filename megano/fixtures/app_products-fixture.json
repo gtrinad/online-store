@@ -1,0 +1,1323 @@
+[
+{
+  "model": "app_products.category",
+  "pk": 1,
+  "fields": {
+    "title": "Monitors",
+    "is_active": true,
+    "parent": null,
+    "favourite": false
+  }
+},
+{
+  "model": "app_products.category",
+  "pk": 2,
+  "fields": {
+    "title": "Laptops, ultrabooks",
+    "is_active": true,
+    "parent": null,
+    "favourite": true
+  }
+},
+{
+  "model": "app_products.category",
+  "pk": 3,
+  "fields": {
+    "title": "Desktop",
+    "is_active": true,
+    "parent": null,
+    "favourite": false
+  }
+},
+{
+  "model": "app_products.category",
+  "pk": 4,
+  "fields": {
+    "title": "TVs",
+    "is_active": true,
+    "parent": null,
+    "favourite": false
+  }
+},
+{
+  "model": "app_products.category",
+  "pk": 5,
+  "fields": {
+    "title": "Phones",
+    "is_active": true,
+    "parent": null,
+    "favourite": false
+  }
+},
+{
+  "model": "app_products.category",
+  "pk": 6,
+  "fields": {
+    "title": "Computer accessories",
+    "is_active": true,
+    "parent": null,
+    "favourite": false
+  }
+},
+{
+  "model": "app_products.category",
+  "pk": 7,
+  "fields": {
+    "title": "Data storage",
+    "is_active": true,
+    "parent": 6,
+    "favourite": false
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 1,
+  "fields": {
+    "src": "icons/category/Monitors/icon_display_01.jpg",
+    "alt": "Monitor icon",
+    "category": 1
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 2,
+  "fields": {
+    "src": "icons/category/Laptops, ultrabooks/icon_notebook_01.jpeg",
+    "alt": "Notebook icon",
+    "category": 2
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 3,
+  "fields": {
+    "src": "icons/category/Desktop/icon_desktop_01.jpeg",
+    "alt": "Desktop icon",
+    "category": 3
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 4,
+  "fields": {
+    "src": "icons/category/TVs/icon_TV-set_01.png",
+    "alt": "TV set icon",
+    "category": 4
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 5,
+  "fields": {
+    "src": "icons/category/Phones/icon_phone_01.png",
+    "alt": "Phone icon",
+    "category": 5
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 6,
+  "fields": {
+    "src": "icons/category/Computer accessories/computers_01.webp",
+    "alt": "Computer accessories icon",
+    "category": 6
+  }
+},
+{
+  "model": "app_products.categoryicon",
+  "pk": 7,
+  "fields": {
+    "src": "icons/category/Computer accessories/Data storage/flash_01.jpg",
+    "alt": "Data storage icon",
+    "category": 7
+  }
+},
+{
+  "model": "app_products.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Monitors"
+  }
+},
+{
+  "model": "app_products.tag",
+  "pk": 2,
+  "fields": {
+    "name": "Desktop"
+  }
+},
+{
+  "model": "app_products.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Phones"
+  }
+},
+{
+  "model": "app_products.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Laptop"
+  }
+},
+{
+  "model": "app_products.tag",
+  "pk": 5,
+  "fields": {
+    "name": "TV"
+  }
+},
+{
+  "model": "app_products.tag",
+  "pk": 6,
+  "fields": {
+    "name": "Data storage"
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 1,
+  "fields": {
+    "category": 5,
+    "title": "Smartphone Apple iPhone 14 Pro Max 1Tb Dual Sim silver",
+    "price": "3000.00",
+    "count": 0,
+    "date": "2023-12-11T20:34:59.672Z",
+    "description": "NFC technology: Yes\r\ncolor: silver\r\nscreen type: OLED, Super Retina XDR display with continuous operation\r\ndiagonal: 6.7 inch",
+    "fullDescription": "NFC technology: Yes\r\ncolor: silver\r\nscreen type: OLED, Super Retina XDR display with continuous operation\r\ndiagonal: 6.7 inch\r\nRAM size: 6 GB\r\nProcessor: 6-core Apple A16 Bionic\r\nbuilt-in memory: 1024.0 GB\r\nBattery capacity: 3095.0 mAh",
+    "freeDelivery": false,
+    "limited_edition": true,
+    "is_active": true,
+    "tags": [
+      3
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 2,
+  "fields": {
+    "category": 5,
+    "title": "Smartphone Samsung Galaxy Z Fold5 5G 12 GB/1024 GB blue",
+    "price": "2500.00",
+    "count": 15,
+    "date": "2023-12-11T20:40:53.721Z",
+    "description": "NFC technology: Yes\r\nblue color\r\nScreen type: Dynamic AMOLED 2X\r\ndiagonal: 7.6 inch",
+    "fullDescription": "NFC technology: Yes\r\nblue color\r\nScreen type: Dynamic AMOLED 2X\r\ndiagonal: 7.6 inch\r\nRAM size: 12 GB\r\nProcessor: 8-core Qualcomm Snapdragon 8 Gen 2\r\nbuilt-in memory: 1024.0 GB\r\nBattery capacity: 4400.0 mAh",
+    "freeDelivery": true,
+    "limited_edition": true,
+    "is_active": true,
+    "tags": [
+      3
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 3,
+  "fields": {
+    "category": 2,
+    "title": "Laptop Apple MacBook Pro 16 2023 MUW63 black",
+    "price": "5000.00",
+    "count": 20,
+    "date": "2023-12-11T20:45:02.725Z",
+    "description": "Screen diagonal: 16.2 inches\r\nprocessor: Apple M3 Max\r\nvideo card: Apple M3 Max 40-Core\r\nRAM size: 48.0 GB",
+    "fullDescription": "Screen diagonal: 16.2 inches\r\nprocessor: Apple M3 Max\r\nvideo card: Apple M3 Max 40-Core\r\nRAM size: 48.0 GB\r\nhard drive type: SSD\r\ntotal storage capacity: 1024",
+    "freeDelivery": false,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      4
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 4,
+  "fields": {
+    "category": 2,
+    "title": "Laptop ASUS Zenbook Pro 16X UX7602ZM-ME103X 90NB0WU1-M004J0 black",
+    "price": "17000.00",
+    "count": 18,
+    "date": "2023-12-11T20:48:14.059Z",
+    "description": "Screen diagonal: 16.0 inch\r\nprocessor: Intel Core i9-12900H\r\nvideo card: NVIDIA GeForce RTX 3060\r\nRAM size: 32.0 GB",
+    "fullDescription": "Screen diagonal: 16.0 inch\r\nprocessor: Intel Core i9-12900H\r\nvideo card: NVIDIA GeForce RTX 3060\r\nRAM size: 32.0 GB\r\nhard drive type: SSD\r\ntotal storage capacity: 1000.0 GB",
+    "freeDelivery": true,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      4
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 5,
+  "fields": {
+    "category": 2,
+    "title": "Laptop ASUS ROG Flow Z13 GZ301ZC-LD130W black",
+    "price": "25000.00",
+    "count": 7,
+    "date": "2023-12-11T20:50:47.303Z",
+    "description": "Screen diagonal: 13.4 inches\r\nprocessor: Intel Core i7 12700H\r\nvideo card: NVIDIA GeForce RTX 3050\r\nRAM size: 16.0 GB",
+    "fullDescription": "Screen diagonal: 13.4 inches\r\nprocessor: Intel Core i7 12700H\r\nvideo card: NVIDIA GeForce RTX 3050\r\nRAM size: 16.0 GB\r\nhard drive type: SSD\r\ntotal storage capacity: 512.0 GB",
+    "freeDelivery": true,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      4
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 6,
+  "fields": {
+    "category": 4,
+    "title": "TV Samsung QE75QN800AUXCE 191 cm silver",
+    "price": "65000.00",
+    "count": 2,
+    "date": "2023-12-11T20:53:59.541Z",
+    "description": "type: QLED TV\r\ndiagonal: 75.0 inch\r\nresolution: 7680x4320\r\nHD support: 8K HDR",
+    "fullDescription": "type: QLED TV\r\ndiagonal: 75.0 inch\r\nresolution: 7680x4320\r\nHD support: 8K HDR\r\nSmart TV technology: Yes\r\nWi-Fi: Yes\r\ninputs: audio, coaxial, optical, AV, HDMI, Ethernet (RJ-45), USB, antenna, Bluetooth",
+    "freeDelivery": true,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 7,
+  "fields": {
+    "category": 4,
+    "title": "TV LG OLED77G3RLA 196 cm gray",
+    "price": "113000.00",
+    "count": 11,
+    "date": "2023-12-11T20:55:43.830Z",
+    "description": "type: OLED TV\r\ndiagonal: 77.0 inch\r\nresolution: 3840x2160\r\nHD support: 4K UHD",
+    "fullDescription": "type: OLED TV\r\ndiagonal: 77.0 inch\r\nresolution: 3840x2160\r\nHD support: 4K UHD\r\nSmart TV technology: Yes\r\nWi-Fi: Yes\r\ninputs: USB, Ethernet (RJ-45), HDMI, Bluetooth",
+    "freeDelivery": true,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 8,
+  "fields": {
+    "category": 4,
+    "title": "TV Sony XR85X95JCEP 216 cm black",
+    "price": "27500.00",
+    "count": 23,
+    "date": "2023-12-11T20:57:19.728Z",
+    "description": "type: LED TV\r\ndiagonal: 85.0 inch\r\nresolution: 3840x2160\r\nHD support: 4K UHD",
+    "fullDescription": "type: LED TV\r\ndiagonal: 85.0 inch\r\nresolution: 3840x2160\r\nHD support: 4K UHD\r\nSmart TV technology: Yes\r\nWi-Fi: Yes\r\ninputs: HDMI, ,Ethernet (RJ-45), ,USB, ,RS-232, ,antenna, ,Bluetooth",
+    "freeDelivery": true,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "app_products.product",
+  "pk": 9,
+  "fields": {
+    "category": 7,
+    "title": "Memory card Transcend TS128GUSD300S 128 GB",
+    "price": "500.00",
+    "count": 115,
+    "date": "2023-12-11T21:31:39.862Z",
+    "description": "Transcend microSDXC 300S memory cards meet both UHS Speed Class 3 (U3) and UHS Video Speed Class 30 (V30) requirements for 4K Ultra HD video recording, delivering read and write speeds of up to 95 and 45 MB/s, respectively.",
+    "fullDescription": "type: microSDXC\r\nmemory capacity: 128 GB\r\ndata writing speed: 45.0 MB/s\r\ndata read speed: 95.0 MB/s",
+    "freeDelivery": true,
+    "limited_edition": false,
+    "is_active": true,
+    "tags": [
+      6
+    ]
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 1,
+  "fields": {
+    "name": "Operating system"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 2,
+  "fields": {
+    "name": "5G support"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 3,
+  "fields": {
+    "name": "Color"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 4,
+  "fields": {
+    "name": "Screen refresh rate"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 5,
+  "fields": {
+    "name": "RAM size"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 6,
+  "fields": {
+    "name": "CPU"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 7,
+  "fields": {
+    "name": "Built-in memory capacity"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 8,
+  "fields": {
+    "name": "Number of megapixels of the main camera"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 9,
+  "fields": {
+    "name": "Weight"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 10,
+  "fields": {
+    "name": "Video card"
+  }
+},
+{
+  "model": "app_products.specification",
+  "pk": 11,
+  "fields": {
+    "name": "Memory"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 1,
+  "fields": {
+    "specification": 1,
+    "product": 1,
+    "value": "iOS 16"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 2,
+  "fields": {
+    "specification": 2,
+    "product": 1,
+    "value": "Yes"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 3,
+  "fields": {
+    "specification": 3,
+    "product": 1,
+    "value": "Silver"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 4,
+  "fields": {
+    "specification": 4,
+    "product": 1,
+    "value": "120 Hz"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 5,
+  "fields": {
+    "specification": 5,
+    "product": 1,
+    "value": "6 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 6,
+  "fields": {
+    "specification": 6,
+    "product": 1,
+    "value": "6-core Apple A16 Bionic"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 7,
+  "fields": {
+    "specification": 7,
+    "product": 1,
+    "value": "1024.0 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 8,
+  "fields": {
+    "specification": 8,
+    "product": 1,
+    "value": "72.0 megapixels"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 9,
+  "fields": {
+    "specification": 9,
+    "product": 1,
+    "value": "240.0 g"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 10,
+  "fields": {
+    "specification": 1,
+    "product": 2,
+    "value": "Android 13"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 11,
+  "fields": {
+    "specification": 2,
+    "product": 2,
+    "value": "Yes"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 12,
+  "fields": {
+    "specification": 3,
+    "product": 2,
+    "value": "Blue"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 13,
+  "fields": {
+    "specification": 4,
+    "product": 2,
+    "value": "120 Hz"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 14,
+  "fields": {
+    "specification": 5,
+    "product": 2,
+    "value": "12 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 15,
+  "fields": {
+    "specification": 6,
+    "product": 2,
+    "value": "Octa-core Qualcomm Snapdragon 8 Gen 2"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 16,
+  "fields": {
+    "specification": 7,
+    "product": 2,
+    "value": "1024.0 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 17,
+  "fields": {
+    "specification": 8,
+    "product": 2,
+    "value": "50.0 megapixels"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 18,
+  "fields": {
+    "specification": 9,
+    "product": 2,
+    "value": "253.0 g"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 19,
+  "fields": {
+    "specification": 1,
+    "product": 3,
+    "value": "macOS"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 20,
+  "fields": {
+    "specification": 6,
+    "product": 3,
+    "value": "Apple M3 Max"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 21,
+  "fields": {
+    "specification": 10,
+    "product": 3,
+    "value": "Apple M3 Max 40-Core"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 22,
+  "fields": {
+    "specification": 5,
+    "product": 3,
+    "value": "48.0 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 23,
+  "fields": {
+    "specification": 9,
+    "product": 3,
+    "value": "2.16 kg"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 24,
+  "fields": {
+    "specification": 3,
+    "product": 3,
+    "value": "Black"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 25,
+  "fields": {
+    "specification": 1,
+    "product": 4,
+    "value": "Win 11 Pro"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 26,
+  "fields": {
+    "specification": 6,
+    "product": 4,
+    "value": "Intel Core i9-12900H"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 27,
+  "fields": {
+    "specification": 10,
+    "product": 4,
+    "value": "NVIDIA GeForce RTX 3060"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 28,
+  "fields": {
+    "specification": 5,
+    "product": 4,
+    "value": "32.0 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 29,
+  "fields": {
+    "specification": 9,
+    "product": 4,
+    "value": "2.4 kg"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 30,
+  "fields": {
+    "specification": 3,
+    "product": 4,
+    "value": "Black"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 31,
+  "fields": {
+    "specification": 1,
+    "product": 5,
+    "value": "Win 11"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 32,
+  "fields": {
+    "specification": 4,
+    "product": 5,
+    "value": "120 Hz"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 33,
+  "fields": {
+    "specification": 6,
+    "product": 5,
+    "value": "Intel Core i7 12700H"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 34,
+  "fields": {
+    "specification": 10,
+    "product": 5,
+    "value": "NVIDIA GeForce RTX 3050"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 35,
+  "fields": {
+    "specification": 5,
+    "product": 5,
+    "value": "16.0 GB"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 36,
+  "fields": {
+    "specification": 9,
+    "product": 5,
+    "value": "1.2 kg"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 37,
+  "fields": {
+    "specification": 3,
+    "product": 5,
+    "value": "Black"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 38,
+  "fields": {
+    "specification": 4,
+    "product": 6,
+    "value": "200 Hz"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 39,
+  "fields": {
+    "specification": 3,
+    "product": 6,
+    "value": "Silver"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 40,
+  "fields": {
+    "specification": 4,
+    "product": 7,
+    "value": "120 Hz"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 41,
+  "fields": {
+    "specification": 3,
+    "product": 7,
+    "value": "Gray"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 42,
+  "fields": {
+    "specification": 4,
+    "product": 8,
+    "value": "120 Hz"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 43,
+  "fields": {
+    "specification": 3,
+    "product": 8,
+    "value": "Black"
+  }
+},
+{
+  "model": "app_products.specificationvalue",
+  "pk": 44,
+  "fields": {
+    "specification": 11,
+    "product": 9,
+    "value": "128 GB"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "src": "images/product_1/gallery_large_01.jpg",
+    "alt": "iPhone 14 Pro Max Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "src": "images/product_1/gallery_large_02.jpg",
+    "alt": "iPhone 14 Pro Max Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 3,
+  "fields": {
+    "product": 1,
+    "src": "images/product_1/gallery_large_03.jpg",
+    "alt": "iPhone 14 Pro Max Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 4,
+  "fields": {
+    "product": 1,
+    "src": "images/product_1/gallery_large_04.jpg",
+    "alt": "iPhone 14 Pro Max Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 5,
+  "fields": {
+    "product": 1,
+    "src": "images/product_1/gallery_large_05.jpg",
+    "alt": "iphone 14 Pro Max Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 6,
+  "fields": {
+    "product": 1,
+    "src": "images/product_1/gallery_large_06.jpg",
+    "alt": "iphone 14 Pro Max Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 7,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_01.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 8,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_02.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 9,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_03.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 10,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_04.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 11,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_05.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 12,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_06.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 13,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_07.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 14,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_08.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 15,
+  "fields": {
+    "product": 2,
+    "src": "images/product_2/galaxy_z_09.jpg",
+    "alt": "Galaxy Z Fold5 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 16,
+  "fields": {
+    "product": 3,
+    "src": "images/product_3/apple_macbook_pro_16_01.jpg",
+    "alt": "Apple Macbook Pro 16 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 17,
+  "fields": {
+    "product": 3,
+    "src": "images/product_3/apple_macbook_pro_16_02.jpg",
+    "alt": "Apple Macbook Pro 16 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 18,
+  "fields": {
+    "product": 3,
+    "src": "images/product_3/apple_macbook_pro_16_03.jpg",
+    "alt": "Apple Macbook Pro 16 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 19,
+  "fields": {
+    "product": 3,
+    "src": "images/product_3/apple_macbook_pro_16_04.jpg",
+    "alt": "Apple Macbook Pro 16 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 20,
+  "fields": {
+    "product": 3,
+    "src": "images/product_3/apple_macbook_pro_16_05.jpg",
+    "alt": "Apple Macbook Pro 16 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 21,
+  "fields": {
+    "product": 3,
+    "src": "images/product_3/apple_macbook_pro_16_06.jpg",
+    "alt": "Apple Macbook Pro 16 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 22,
+  "fields": {
+    "product": 4,
+    "src": "images/product_4/asus_zenbook_01.jpg",
+    "alt": "ASUS Zenbook Pro 16X Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 23,
+  "fields": {
+    "product": 4,
+    "src": "images/product_4/asus_zenbook_02.jpg",
+    "alt": "ASUS Zenbook Pro 16X Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 24,
+  "fields": {
+    "product": 4,
+    "src": "images/product_4/asus_zenbook_03.jpg",
+    "alt": "ASUS Zenbook Pro 16X Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 25,
+  "fields": {
+    "product": 4,
+    "src": "images/product_4/asus_zenbook_04.jpg",
+    "alt": "ASUS Zenbook Pro 16X Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 26,
+  "fields": {
+    "product": 5,
+    "src": "images/product_5/asus_rog_01.jpg",
+    "alt": "ASUS ROG Flow Z13 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 27,
+  "fields": {
+    "product": 5,
+    "src": "images/product_5/asus_rog_02.jpg",
+    "alt": "ASUS ROG Flow Z13 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 28,
+  "fields": {
+    "product": 5,
+    "src": "images/product_5/asus_rog_03.jpg",
+    "alt": "ASUS ROG Flow Z13 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 29,
+  "fields": {
+    "product": 5,
+    "src": "images/product_5/asus_rog_04.jpg",
+    "alt": "ASUS ROG Flow Z13 Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 30,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_01.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 31,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_02.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 32,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_03.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 33,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_04.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 34,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_05.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 35,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_06.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 36,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_07.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 37,
+  "fields": {
+    "product": 6,
+    "src": "images/product_6/samsung_qe_08.jpg",
+    "alt": "Samsung TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 38,
+  "fields": {
+    "product": 7,
+    "src": "images/product_7/lg_oled_01.jpg",
+    "alt": "LG TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 39,
+  "fields": {
+    "product": 7,
+    "src": "images/product_7/lg_oled_02.jpg",
+    "alt": "LG TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 40,
+  "fields": {
+    "product": 7,
+    "src": "images/product_7/lg_oled_03.jpg",
+    "alt": "LG TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 41,
+  "fields": {
+    "product": 7,
+    "src": "images/product_7/lg_oled_04.jpg",
+    "alt": "LG TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 42,
+  "fields": {
+    "product": 7,
+    "src": "images/product_7/lg_oled_05.jpg",
+    "alt": "LG TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 43,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_01.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 44,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_02.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 45,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_03.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 46,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_04.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 47,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_05.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 48,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_06.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 49,
+  "fields": {
+    "product": 8,
+    "src": "images/product_8/sony_xr_07.jpg",
+    "alt": "Sony TV Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 50,
+  "fields": {
+    "product": 9,
+    "src": "images/product_9/transcend_01.jpg",
+    "alt": "Memory card Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 51,
+  "fields": {
+    "product": 9,
+    "src": "images/product_9/transcend_02.jpg",
+    "alt": "Memory card Image"
+  }
+},
+{
+  "model": "app_products.productimage",
+  "pk": 52,
+  "fields": {
+    "product": 9,
+    "src": "images/product_9/transcend_03.jpg",
+    "alt": "Memory card Image"
+  }
+},
+{
+  "model": "app_products.review",
+  "pk": 1,
+  "fields": {
+    "product": 8,
+    "author": "Master Vu",
+    "email": "vu@example.com",
+    "text": "Nice TV!",
+    "rate": 5,
+    "date": "2023-12-12T08:04:19.901Z"
+  }
+},
+{
+  "model": "app_products.review",
+  "pk": 2,
+  "fields": {
+    "product": 8,
+    "author": "Vanda",
+    "email": "vanda@example.com",
+    "text": "Not bad!",
+    "rate": 4,
+    "date": "2023-12-12T08:06:26.463Z"
+  }
+},
+{
+  "model": "app_products.sale",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "salePrice": "1500.00",
+    "dateFrom": "2023-12-11",
+    "dateTo": "2023-12-31"
+  }
+}
+]
