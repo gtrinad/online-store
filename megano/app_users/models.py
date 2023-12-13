@@ -5,10 +5,7 @@ from django.db import models
 def user_avatar_directory_path(instance: "UserAvatar", filename: str) -> str:
     """Generate file path for user avatar."""
 
-    return "avatars/avatar_{pk}/{filename}".format(
-        pk=instance.pk,
-        filename=filename
-    )
+    return "avatars/avatar_{pk}/{filename}".format(pk=instance.pk, filename=filename)
 
 
 class UserAvatar(models.Model):

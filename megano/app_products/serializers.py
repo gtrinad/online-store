@@ -1,7 +1,16 @@
 from django.db.models import Avg
 from rest_framework import serializers
 
-from .models import CategoryIcon, Category, ProductImage, Review, Tag, Product, SpecificationValue, Sale
+from .models import (
+    CategoryIcon,
+    Category,
+    ProductImage,
+    Review,
+    Tag,
+    Product,
+    SpecificationValue,
+    Sale,
+)
 
 
 class CategoryIconSerializer(serializers.ModelSerializer):

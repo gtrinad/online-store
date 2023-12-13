@@ -5,24 +5,41 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('app_products', '0006_review'),
+        ("app_products", "0006_review"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Sale',
+            name="Sale",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('salePrice', models.DecimalField(decimal_places=2, default=0, max_digits=10)),
-                ('dateFrom', models.DateField(blank=True, null=True)),
-                ('dateTo', models.DateField(blank=True, null=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='sales', to='app_products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "salePrice",
+                    models.DecimalField(decimal_places=2, default=0, max_digits=10),
+                ),
+                ("dateFrom", models.DateField(blank=True, null=True)),
+                ("dateTo", models.DateField(blank=True, null=True)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="sales",
+                        to="app_products.product",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Sale',
-                'verbose_name_plural': 'Sales',
+                "verbose_name": "Sale",
+                "verbose_name_plural": "Sales",
             },
         ),
     ]

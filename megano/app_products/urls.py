@@ -1,7 +1,17 @@
 from django.urls import path
 
-from .views import CategoryListAPIView, ProductListAPIView, ProductDetailAPIView, ReviewCreateAPIView, TagListAPIView, \
-    LimitedEditionProductListAPIView, PopularProductListAPIView, CatalogAPIView, BannersList, SalesList
+from .views import (
+    CategoryListAPIView,
+    ProductListAPIView,
+    ProductDetailAPIView,
+    ReviewCreateAPIView,
+    TagListAPIView,
+    LimitedEditionProductListAPIView,
+    PopularProductListAPIView,
+    CatalogAPIView,
+    BannersList,
+    SalesList,
+)
 
 app_name = "app_products"
 

@@ -5,7 +5,11 @@ from rest_framework import serializers
 
 from .models import Order
 from app_products.models import Product
-from app_products.serializers import ImageSerializer, TagSerializer, CatalogItemSerializer
+from app_products.serializers import (
+    ImageSerializer,
+    TagSerializer,
+    CatalogItemSerializer,
+)
 
 
 class BasketSerializer(serializers.ModelSerializer):

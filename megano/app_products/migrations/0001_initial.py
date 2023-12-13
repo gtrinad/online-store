@@ -5,26 +5,41 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Category',
+            name="Category",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(db_index=True, max_length=128, unique=True)),
-                ('is_active', models.BooleanField(default=False)),
-                ('favourite', models.BooleanField(default=False)),
-                ('parent', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.PROTECT, related_name='subcategories', to='app_products.category')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(db_index=True, max_length=128, unique=True)),
+                ("is_active", models.BooleanField(default=False)),
+                ("favourite", models.BooleanField(default=False)),
+                (
+                    "parent",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="subcategories",
+                        to="app_products.category",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Category',
-                'verbose_name_plural': 'Categories',
-                'ordering': ['pk'],
+                "verbose_name": "Category",
+                "verbose_name_plural": "Categories",
+                "ordering": ["pk"],
             },
         ),
     ]

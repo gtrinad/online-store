@@ -63,7 +63,9 @@ class Cart(object):
     def total_price(self):
         """Calculate the cost of products in the cart."""
 
-        return sum(Decimal(item["price"]) * item["count"] for item in self.cart.values())
+        return sum(
+            Decimal(item["price"]) * item["count"] for item in self.cart.values()
+        )
 
     def clear(self):
         self.session[settings.CART_SESSION_ID] = {}

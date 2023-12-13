@@ -12,7 +12,12 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .models import UserAvatar, UserProfile
-from .serializers import SignUpSerializer, ProfileSerializer, PasswordUpdateSerializer, AvatarSerializer
+from .serializers import (
+    SignUpSerializer,
+    ProfileSerializer,
+    PasswordUpdateSerializer,
+    AvatarSerializer,
+)
 
 
 class SignInView(APIView):
@@ -31,7 +36,9 @@ class SignInView(APIView):
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         except json.JSONDecodeError:
-            return Response(status=status.HTTP_400_BAD_REQUEST, data={"error": "Invalid JSON data"})
+            return Response(
+                status=status.HTTP_400_BAD_REQUEST, data={"error": "Invalid JSON data"}
+            )
 
 
 class SignUpView(APIView):
@@ -45,13 +52,19 @@ class SignUpView(APIView):
         serializer = SignUpSerializer(data=data_dict)
         if serializer.is_valid():
             validated_data = serializer.validated_data
-            name, username, password = validated_data["name"], validated_data["username"], validated_data["password"]
+            name, username, password = (
+                validated_data["name"],
+                validated_data["username"],
+                validated_data["password"],
+            )
 
             try:
                 # Create user, avatar, and profile
                 user = User.objects.create_user(username=username, password=password)
                 avatar = UserAvatar.objects.create(alt=f"{name}'s Avatar")
-                profile = UserProfile.objects.create(user=user, full_name=name, avatar=avatar)
+                profile = UserProfile.objects.create(
+                    user=user, full_name=name, avatar=avatar
+                )
 
                 # Authenticate and login
                 user = authenticate(request, username=username, password=password)
@@ -61,9 +74,13 @@ class SignUpView(APIView):
                 return Response(status=status.HTTP_201_CREATED)
 
             except Exception as e:
-                return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR, data={"error": str(e)})
+                return Response(
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR, data={"error": str(e)}
+                )
         else:
-            return Response(status=status.HTTP_400_BAD_REQUEST, data={"errors": serializer.errors})
+            return Response(
+                status=status.HTTP_400_BAD_REQUEST, data={"errors": serializer.errors}
+            )
 
 
 class SignOutView(APIView):
@@ -112,10 +129,15 @@ class AvatarUpdateView(APIView):
 
                 return Response(status=status.HTTP_200_OK)
 
-            return Response({"error": "No 'avatar' file provided."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"error": "No 'avatar' file provided."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
 
         except Exception as e:
-            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response(
+                {"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 
 class PasswordUpdateView(APIView):
@@ -125,7 +147,9 @@ class PasswordUpdateView(APIView):
         return self.request.user
 
     def post(self, request: Request) -> Response:
-        serializer = PasswordUpdateSerializer(data=request.data, context={"request": request})
+        serializer = PasswordUpdateSerializer(
+            data=request.data, context={"request": request}
+        )
 
         if serializer.is_valid():
             user = self.get_user()

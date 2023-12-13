@@ -5,20 +5,41 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('app_orders', '0001_initial'),
-        ('app_products', '0007_sale'),
+        ("app_orders", "0001_initial"),
+        ("app_products", "0007_sale"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='ProductsInOrder',
+            name="ProductsInOrder",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('count', models.PositiveIntegerField()),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products_in_order', to='app_orders.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, related_name='products_in_orders', to='app_products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("count", models.PositiveIntegerField()),
+                (
+                    "order",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="products_in_order",
+                        to="app_orders.order",
+                    ),
+                ),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.PROTECT,
+                        related_name="products_in_orders",
+                        to="app_products.product",
+                    ),
+                ),
             ],
         ),
     ]

@@ -52,7 +52,9 @@ class Orders(APIView):
         return Response(serialized.data)
 
     def post(self, request: Request, *args, **kwargs) -> Response:
-        products_in_order = [(obj["id"], obj["count"], obj["price"]) for obj in request.data]
+        products_in_order = [
+            (obj["id"], obj["count"], obj["price"]) for obj in request.data
+        ]
         print("products_in_order", products_in_order)
         product_ids = list(zip(*products_in_order))[0]
         print("product_ids", product_ids)
@@ -108,7 +110,7 @@ class OrderDetail(APIView):
         order.city = data["city"]
         order.address = data["address"]
         order.paymentType = data["paymentType"]
-        order.status = "Ожидает оплаты"
+        order.status = "Awaiting payment"
 
         if data["deliveryType"] == "express":
             order.totalCost += 500

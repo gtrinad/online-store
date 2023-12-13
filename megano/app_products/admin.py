@@ -2,12 +2,29 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.utils.text import Truncator
 
-from .models import Category, CategoryIcon, Tag, Specification, Product, SpecificationValue, ProductImage, Review, Sale
+from .models import (
+    Category,
+    CategoryIcon,
+    Tag,
+    Specification,
+    Product,
+    SpecificationValue,
+    ProductImage,
+    Review,
+    Sale,
+)
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ("pk", "avatar_thumbnail", "title", "is_active", "parent", "favourite")
+    list_display = (
+        "pk",
+        "avatar_thumbnail",
+        "title",
+        "is_active",
+        "parent",
+        "favourite",
+    )
     list_display_links = ("pk", "title")
     ordering = ["pk"]
     list_filter = ["is_active", "favourite"]
@@ -23,9 +40,9 @@ class CategoryAdmin(admin.ModelAdmin):
             '<div style="display: flex; align-items: center; justify-content: center;">'
             '   <a href="{0}" target="_blank">'
             '       <img src="{0}" height="50" style="border-radius: 10%">'
-            '   </a>'
-            '</div>',
-            obj.image.src.url
+            "   </a>"
+            "</div>",
+            obj.image.src.url,
         )
 
 
@@ -45,9 +62,9 @@ class CategoryIconAdmin(admin.ModelAdmin):
             '<div style="display: flex; align-items: center; justify-content: center;">'
             '   <a href="{0}" target="_blank">'
             '       <img src="{0}" height="50" style="border-radius: 10%">'
-            '   </a>'
-            '</div>',
-            obj.src.url
+            "   </a>"
+            "</div>",
+            obj.src.url,
         )
 
 
@@ -77,12 +94,21 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ["title", "description", "fullDescription"]
 
     fieldsets = (
-        (None, {
-            "fields": ("title", "price", "count", "category", "is_active", "tags")
-        }),
-        ("Description", {
-            "fields": ("description", "fullDescription", "freeDelivery", "limited_edition"),
-        }),
+        (
+            None,
+            {"fields": ("title", "price", "count", "category", "is_active", "tags")},
+        ),
+        (
+            "Description",
+            {
+                "fields": (
+                    "description",
+                    "fullDescription",
+                    "freeDelivery",
+                    "limited_edition",
+                ),
+            },
+        ),
     )
 
     @admin.display(description="Category")
@@ -92,7 +118,9 @@ class ProductAdmin(admin.ModelAdmin):
     @admin.display(description="Description")
     def short_description(self, obj):
         truncated_description = Truncator(obj.description).chars(48)
-        return format_html(f'<span title="{obj.description}">{truncated_description}</span>')
+        return format_html(
+            f'<span title="{obj.description}">{truncated_description}</span>'
+        )
 
 
 @admin.register(Specification)
@@ -132,8 +160,8 @@ class ProductImageAdmin(admin.ModelAdmin):
         return format_html(
             '<div style="display: flex; align-items: center; justify-content: center;">'
             '   <img src="{}" style="border-radius: 10%; max-width: 100px; max-height: 50px;">'
-            '</div>',
-            obj.src.url
+            "</div>",
+            obj.src.url,
         )
 
 
@@ -150,7 +178,14 @@ class ReviewAdmin(admin.ModelAdmin):
 
 @admin.register(Sale)
 class SaleAdmin(admin.ModelAdmin):
-    list_display = ("pk", "product_image", "product_title", "salePrice", "dateFrom", "dateTo")
+    list_display = (
+        "pk",
+        "product_image",
+        "product_title",
+        "salePrice",
+        "dateFrom",
+        "dateTo",
+    )
     list_display_links = ("pk", "product_title")
     ordering = ["pk"]
 
@@ -166,8 +201,8 @@ class SaleAdmin(admin.ModelAdmin):
                 '<div style="display: flex; align-items: center; justify-content: center;">'
                 '   <a href="{0}" target="_blank">'
                 '       <img src="{0}" height="50" style="border-radius: 10%">'
-                '   </a>'
-                '</div>',
-                image.src.url
+                "   </a>"
+                "</div>",
+                image.src.url,
             )
         return None

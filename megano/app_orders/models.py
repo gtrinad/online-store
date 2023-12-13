@@ -48,6 +48,10 @@ class Order(models.Model):
 
 
 class ProductsInOrder(models.Model):
-    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="products_in_order")
-    product = models.ForeignKey(Product, on_delete=models.PROTECT, related_name="products_in_orders")
+    order = models.ForeignKey(
+        Order, on_delete=models.CASCADE, related_name="products_in_order"
+    )
+    product = models.ForeignKey(
+        Product, on_delete=models.PROTECT, related_name="products_in_orders"
+    )
     count = models.PositiveIntegerField()

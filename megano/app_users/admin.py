@@ -12,7 +12,9 @@ class UserAvatarAdmin(admin.ModelAdmin):
 
     @admin.display(description="Avatar")
     def avatar_thumbnail(self, obj):
-        return format_html('<img src="{}" height="50" style="border-radius: 10%">', obj.src.url)
+        return format_html(
+            '<img src="{}" height="50" style="border-radius: 10%">', obj.src.url
+        )
 
 
 @admin.register(UserProfile)
@@ -25,4 +27,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 
     @admin.display(description="Avatar")
     def avatar_thumbnail(self, obj):
-        return format_html('<a href="{0}" target="_blank"><img src="{0}" height="50" style="border-radius: 10%"></a>', obj.avatar.src.url)
+        return format_html(
+            '<a href="{0}" target="_blank"><img src="{0}" height="50" style="border-radius: 10%"></a>',
+            obj.avatar.src.url,
+        )

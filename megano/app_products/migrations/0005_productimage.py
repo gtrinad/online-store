@@ -6,24 +6,51 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('app_products', '0004_specification_product_specificationvalue_and_more'),
+        ("app_products", "0004_specification_product_specificationvalue_and_more"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='ProductImage',
+            name="ProductImage",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('src', models.ImageField(upload_to=app_products.models.product_image_directory_path, verbose_name='Image link')),
-                ('alt', models.CharField(default='Image description', max_length=128, verbose_name='Image description')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='images', to='app_products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "src",
+                    models.ImageField(
+                        upload_to=app_products.models.product_image_directory_path,
+                        verbose_name="Image link",
+                    ),
+                ),
+                (
+                    "alt",
+                    models.CharField(
+                        default="Image description",
+                        max_length=128,
+                        verbose_name="Image description",
+                    ),
+                ),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="images",
+                        to="app_products.product",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Product image',
-                'verbose_name_plural': 'Product images',
-                'ordering': ['pk'],
+                "verbose_name": "Product image",
+                "verbose_name_plural": "Product images",
+                "ordering": ["pk"],
             },
         ),
     ]

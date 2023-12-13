@@ -5,53 +5,112 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('app_products', '0003_tag'),
+        ("app_products", "0003_tag"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Specification',
+            name="Specification",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=128)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=128)),
             ],
         ),
         migrations.CreateModel(
-            name='Product',
+            name="Product",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=128)),
-                ('price', models.DecimalField(decimal_places=2, default=0, max_digits=10)),
-                ('count', models.PositiveIntegerField(default=0)),
-                ('date', models.DateTimeField(auto_now_add=True)),
-                ('description', models.TextField(blank=True, max_length=256, null=True)),
-                ('fullDescription', models.TextField(blank=True, null=True)),
-                ('freeDelivery', models.BooleanField(default=True)),
-                ('limited_edition', models.BooleanField(default=False)),
-                ('is_active', models.BooleanField(default=True)),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='product_category', to='app_products.category')),
-                ('tags', models.ManyToManyField(related_name='product_tags', to='app_products.tag')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=128)),
+                (
+                    "price",
+                    models.DecimalField(decimal_places=2, default=0, max_digits=10),
+                ),
+                ("count", models.PositiveIntegerField(default=0)),
+                ("date", models.DateTimeField(auto_now_add=True)),
+                (
+                    "description",
+                    models.TextField(blank=True, max_length=256, null=True),
+                ),
+                ("fullDescription", models.TextField(blank=True, null=True)),
+                ("freeDelivery", models.BooleanField(default=True)),
+                ("limited_edition", models.BooleanField(default=False)),
+                ("is_active", models.BooleanField(default=True)),
+                (
+                    "category",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="product_category",
+                        to="app_products.category",
+                    ),
+                ),
+                (
+                    "tags",
+                    models.ManyToManyField(
+                        related_name="product_tags", to="app_products.tag"
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Product',
-                'verbose_name_plural': 'Products',
-                'ordering': ['pk'],
+                "verbose_name": "Product",
+                "verbose_name_plural": "Products",
+                "ordering": ["pk"],
             },
         ),
         migrations.CreateModel(
-            name='SpecificationValue',
+            name="SpecificationValue",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('value', models.CharField(max_length=128)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='product_values', to='app_products.product')),
-                ('specification', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='specification_values', to='app_products.specification')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("value", models.CharField(max_length=128)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="product_values",
+                        to="app_products.product",
+                    ),
+                ),
+                (
+                    "specification",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="specification_values",
+                        to="app_products.specification",
+                    ),
+                ),
             ],
         ),
         migrations.AddField(
-            model_name='product',
-            name='specifications',
-            field=models.ManyToManyField(related_name='product_specifications', through='app_products.SpecificationValue', to='app_products.specification'),
+            model_name="product",
+            name="specifications",
+            field=models.ManyToManyField(
+                related_name="product_specifications",
+                through="app_products.SpecificationValue",
+                to="app_products.specification",
+            ),
         ),
     ]

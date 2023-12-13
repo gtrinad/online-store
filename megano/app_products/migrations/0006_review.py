@@ -5,27 +5,41 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('app_products', '0005_productimage'),
+        ("app_products", "0005_productimage"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Review',
+            name="Review",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('author', models.CharField(default='Anonymous', max_length=128)),
-                ('email', models.EmailField(max_length=254)),
-                ('text', models.TextField()),
-                ('rate', models.IntegerField()),
-                ('date', models.DateTimeField(auto_now_add=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='app_products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("author", models.CharField(default="Anonymous", max_length=128)),
+                ("email", models.EmailField(max_length=254)),
+                ("text", models.TextField()),
+                ("rate", models.IntegerField()),
+                ("date", models.DateTimeField(auto_now_add=True)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="reviews",
+                        to="app_products.product",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'Review',
-                'verbose_name_plural': 'Reviews',
-                'ordering': ['pk'],
+                "verbose_name": "Review",
+                "verbose_name_plural": "Reviews",
+                "ordering": ["pk"],
             },
         ),
     ]

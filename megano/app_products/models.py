@@ -130,8 +130,7 @@ class SpecificationValue(models.Model):
 
     def __str__(self):
         return "{specification}: {value}".format(
-            specification=self.specification,
-            value=self.value
+            specification=self.specification, value=self.value
         )
 
 
@@ -145,9 +144,7 @@ class ProductImage(models.Model):
         upload_to=product_image_directory_path, verbose_name="Image link"
     )
     alt = models.CharField(
-        max_length=128,
-        verbose_name="Image description",
-        default="Image description"
+        max_length=128, verbose_name="Image description", default="Image description"
     )
 
     class Meta:

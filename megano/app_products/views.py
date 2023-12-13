@@ -10,8 +10,15 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .models import Category, Product, Tag, Sale
-from .serializers import CategorySerializer, ProductSerializer, ReviewSerializer, TagSerializer, \
-    LimitedProductSerializer, CatalogItemSerializer, SaleSerializer
+from .serializers import (
+    CategorySerializer,
+    ProductSerializer,
+    ReviewSerializer,
+    TagSerializer,
+    LimitedProductSerializer,
+    CatalogItemSerializer,
+    SaleSerializer,
+)
 
 
 class CategoryListAPIView(ListAPIView):
